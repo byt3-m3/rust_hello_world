@@ -5,7 +5,10 @@ Floats: f32, f64
 Boolean: (bool)
 Characters: (char)
 Tuples
-Array
+Array - Fixed length, vectors are dynamic length
+
+Rust is statitcally typed, but its not required to set the type during variable definition, the complier can infer the type based on the value 
+
 */
 
 
