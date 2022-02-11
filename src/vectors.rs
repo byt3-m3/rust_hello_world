@@ -12,6 +12,12 @@ pub fn run() {
     // Mutable Arry 
     let mut m_numbers: Vec<i32> = vec![1, 2, 3];
 
+    // Add value to Vector
+    m_numbers.push(4);
+
+    // Pop off last value 
+    m_numbers.pop();
+
     // Reassign Value
     m_numbers[1] = 20;
     println!("{:?}", m_numbers);
@@ -24,6 +30,16 @@ pub fn run() {
 
     // Get Slice
     let slice: &[i32] = &m_numbers[0..2];
+    println!("Slice: {:?}", slice);
 
-    println!("Slice: {:?}", slice)
+    // Loop Vector Values
+    for x in m_numbers.iter() {
+        println!("Numbner: {}", x)
+    }
+
+    // Loop amd Mutate Value
+    for x in m_numbers.iter_mut() {
+        *x *= 2;
+    };
+    println!("{:?}", m_numbers)
 }
